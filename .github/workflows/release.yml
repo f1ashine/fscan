@@ -33,5 +33,4 @@ jobs:
           version: latest
           args: -f .github/conf/.goreleaser.yml
           workdir: .
-        env:
           GITHUB_TOKEN: ${{ secrets.action_token }}
