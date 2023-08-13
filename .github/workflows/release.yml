@@ -34,4 +34,4 @@ jobs:
           args: -f .github/conf/.goreleaser.yml
           workdir: .
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.action_token }}
