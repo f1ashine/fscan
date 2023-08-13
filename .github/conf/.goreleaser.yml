@@ -4,7 +4,7 @@ before:
     - go mod tidy
     - go generate ./...
 env:
-  - GITHUB_TOKEN: ${{ secrets.ACTION_TOKEN }}
+  - GITHUB_TOKEN=${{ secrets.ACTION_TOKEN }}
 builds:
   - id: "with-upx"
     env:
