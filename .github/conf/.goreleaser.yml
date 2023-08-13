@@ -28,6 +28,8 @@ builds:
         goarch: arm
       - goos: freebsd
         goarch: arm64
+      - goos: freebsd
+        goarch: amd64
     hooks:
        post: upx --best -f -q "{{ .Path }}"
 
