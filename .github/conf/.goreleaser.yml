@@ -39,7 +39,7 @@ builds:
        post: upx --best -f -q "{{ .Path }}"
 
 archives:
-  - replacements:
+ - replacements:
       darwin: Darwin
       linux: Linux
       windows: Windows
