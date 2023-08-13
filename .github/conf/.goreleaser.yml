@@ -38,7 +38,7 @@ builds:
     hooks:
        post: upx --best -f -q "{{ .Path }}"
 
-archives:
+archive:
   - replacements:
       darwin: Darwin
       linux: Linux
