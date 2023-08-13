@@ -3,8 +3,7 @@ before:
     - sudo apt -y install libprotobuf-dev protobuf-compiler protoc-gen-go
     - go mod tidy
     - go generate ./...
-env:
-  - GITHUB_TOKEN=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
+
 builds:
   - id: "with-upx"
     env:
