@@ -8,16 +8,8 @@ builds:
   - id: "with-upx"
     env:
       - CGO_ENABLED=0
-    goos:
-      - linux
-      - windows
-      - darwin
-      - freebsd
-    goarch:
-      - amd64
-      - arm64
-      - arm
-      - "386"
+    goos: [ linux,windows,darwin,freebsd ]
+    goarch: [ amd64,arm64,arm,386 ]
     goarm:
       - "6"
       - "7"
